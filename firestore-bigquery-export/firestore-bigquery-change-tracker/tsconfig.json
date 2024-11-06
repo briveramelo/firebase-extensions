@@ -1,12 +1,21 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "lib",
     "types": ["node"],
     "target": "ES2020",
     "skipLibCheck": true,
-    "declaration": true
+    "declaration": true,
+    "lib": ["es6"],
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "sourceMap": false,
+    "moduleResolution": "node",  // Ensures TypeScript can resolve modules like Node.js does
+    "baseUrl": "./",              // Sets the base URL for non-relative imports
+    "paths": {
+      "*": ["node_modules/*"],    // Resolves modules in node_modules
+      "src/*": ["src/*"]          // Resolves imports from the src directory
+    }
   },
   "include": ["src"],
-  "exclude": ["src/**/*.test.ts"]
+  "exclude": ["src/**/*.test.ts", "node_modules"]
 }
