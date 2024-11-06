@@ -102,6 +102,7 @@ export const syncBigQuery = functions.tasks
             operation: changeType,
             documentName: context.resource.name,
             documentId,
+            uid: context.auth?.uid,
             pathParams: config.wildcardIds ? context.params : null,
             eventId: context.eventId,
             data,
@@ -243,8 +244,8 @@ async function recordEventToBigQuery(
     timestamp: context.timestamp, // Cloud Firestore commit timestamp
     operation: changeType, // The type of operation performed
     documentName: context.resource.name, // The document name
-    uid: context.auth?.uid, // The user making the change
     documentId, // The document ID
+    uid: context.auth?.uid, // The user making the change
     pathParams: (config.wildcardIds ? context.params : null) as
       | FirestoreDocumentChangeEvent["pathParams"]
       | null, // Path parameters, if any
