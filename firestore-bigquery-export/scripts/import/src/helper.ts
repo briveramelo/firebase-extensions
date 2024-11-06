@@ -82,6 +82,7 @@ export function getRowsFromDocs(
             operation: ChangeType.IMPORT,
             documentName: `projects/${config.projectId}/databases/${FIRESTORE_DEFAULT_DATABASE}/documents/${path}`,
             documentId: doc.id,
+            uid: null,
             // TODO: fix this type
             // @ts-expect-error
             pathParams,
@@ -100,6 +101,7 @@ export function getRowsFromDocs(
         operation: ChangeType.IMPORT,
         documentName: `projects/${config.projectId}/databases/${FIRESTORE_DEFAULT_DATABASE}/documents/${snapshot.ref.path}`,
         documentId: snapshot.id,
+        uid: null,
         pathParams: resolveWildcardIds(
           config.sourceCollectionPath,
           snapshot.ref.path

@@ -188,6 +188,7 @@ describe("processing partitions on a new table", () => {
         documentName: "",
         eventId: "",
         documentId: "",
+        uid: "",
         data: { end_date },
       };
 
@@ -223,6 +224,7 @@ describe("processing partitions on a new table", () => {
         documentName: "",
         eventId: "",
         documentId: "",
+        uid: "",
         data: { end_date },
       };
 
@@ -258,6 +260,7 @@ describe("processing partitions on a new table", () => {
         documentName: "",
         eventId: "",
         documentId: "",
+        uid: "",
         data: { end_date },
       };
 
@@ -292,6 +295,7 @@ describe("processing partitions on a new table", () => {
         documentName: "",
         eventId: "",
         documentId: "",
+        uid: "",
         data: { end_date },
       };
 
@@ -321,6 +325,7 @@ describe("processing partitions on a new table", () => {
         documentName: "",
         eventId: "",
         documentId: "",
+        uid: "",
         data: { end_date: "testing" },
       };
 
@@ -349,6 +354,7 @@ describe("processing partitions on a new table", () => {
         documentName: "",
         eventId: "",
         documentId: "",
+        uid: "",
         data: { end_date: "testing" },
       };
 
@@ -378,6 +384,7 @@ describe("processing partitions on a new table", () => {
         documentName: "",
         eventId: "",
         documentId: "",
+        uid: "",
         data: { end_date: "testing" },
       };
 
@@ -407,6 +414,7 @@ describe("processing partitions on a new table", () => {
         documentName: "",
         eventId: "",
         documentId: "",
+        uid: "",
         data: {},
       };
 
@@ -436,6 +444,7 @@ describe("processing partitions on a new table", () => {
         documentName: "",
         eventId: "",
         documentId: "",
+        uid: "",
         data: { end_date: 20 },
       };
 
