@@ -243,6 +243,7 @@ async function recordEventToBigQuery(
     timestamp: context.timestamp, // Cloud Firestore commit timestamp
     operation: changeType, // The type of operation performed
     documentName: context.resource.name, // The document name
+    uid: context.auth?.uid, // The user making the change
     documentId, // The document ID
     pathParams: (config.wildcardIds ? context.params : null) as
       | FirestoreDocumentChangeEvent["pathParams"]

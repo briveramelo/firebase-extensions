@@ -30,6 +30,7 @@ export interface FirestoreDocumentChangeEvent {
   documentName: string;
   eventId: string;
   documentId: string;
+  uid?: string;
   pathParams?: { documentId: string; [key: string]: string } | null;
   data: Object;
   oldData?: Object | null;

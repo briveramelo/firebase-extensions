@@ -110,6 +110,7 @@ export class FirestoreBigQueryEventHistoryTracker
           event_id: event.eventId,
           document_name: event.documentName,
           document_id: event.documentId,
+          uid: event.uid,
           operation: ChangeType[event.operation],
           data: JSON.stringify(this.serializeData(event.data)),
           old_data: event.oldData

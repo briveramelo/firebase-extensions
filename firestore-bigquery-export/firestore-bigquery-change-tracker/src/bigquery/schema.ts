@@ -67,6 +67,12 @@ export const documentIdField = {
   type: "STRING",
   description: "The document id as defined in the firestore database.",
 };
+export const uidField = {
+  name: "uid",
+  mode: "NULLABLE",
+  type: "STRING",
+  description: "The uid of the user making the change.",
+};
 
 export const documentPathParams = {
   name: "path_params",
@@ -133,6 +139,7 @@ export const RawChangelogViewSchema = {
         "The full JSON representation of the document state before the indicated operation is applied.",
     },
     documentIdField,
+    uidField,
   ],
 };
 
@@ -180,6 +187,7 @@ export const RawChangelogSchema = {
         "The full JSON representation of the document state before the indicated operation is applied. This field will be null for CREATE operations.",
     },
     documentIdField,
+    uidField,
   ],
 };
 
