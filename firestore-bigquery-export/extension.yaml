@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-name: firestore-bigquery-export
+name: firestore-bigquery-changelog
 version: 0.1.56
 specVersion: v1beta
 
-displayName: Stream Firestore to BigQuery
+displayName: Stream Firestore Changes to BigQuery
 description:
   Sends realtime, incremental updates from a specified Cloud Firestore
   collection to BigQuery.
